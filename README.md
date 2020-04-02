@@ -26,7 +26,7 @@ Get help information by running
 
   -i, --input        Required. Path to input file.
 
-  -o, --onput        Required. Path to output file.
+  -o, --output        Required. Path to output file.
 
   -c, --column       Required. Comma separated columns number to mask. Starts with 0.
 
