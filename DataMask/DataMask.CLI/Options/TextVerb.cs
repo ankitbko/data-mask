@@ -16,7 +16,7 @@ namespace DataMask.CLI.Options
         [Option('i', "input", Required = true, HelpText = "Path to input file.")]
         public string InputFilePath { get; set; }
 
-        [Option('o', "onput", Required = true, HelpText = "Path to output file.")]
+        [Option('o', "output", Required = true, HelpText = "Path to output file.")]
         public string OutputFilePath { get; set; }
 
         [Option('c', "column", Separator = ',', Required = true, Min = 1, HelpText ="Comma separated columns number to mask. Starts with 0.")]
