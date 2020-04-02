@@ -1,22 +1,9 @@
 # data-mask
 Mask/Anonymize (Hash) data in different file
 
-# Prerequisite
- - dotnet core sdk 3.1
- 
 # Usage
 
-Build the solution by running - 
-
-```ps
-dotnet publish -o .\out
-```
-
-Go to `out` directory.
-
-```
-cd out
-```
+Download precompiled version from release tab in Github for specific OS 
 
 Get help information by running
 
@@ -41,4 +28,30 @@ To mask a csv file run below code. `-c` parameter takes column index to mask. Co
 
 ```
 datamask.exe -i .\inputfile.csv -o .\output.csv -c 1,3
+```
+
+---
+
+# Build
+
+To build the application locally follow below instruction
+
+
+## Prerequisite
+ - dotnet core sdk 3.1
+ 
+win-x64 Self Contained
+```
+dotnet publish -r win-x64 -o .\out -p:PublishSingleFile=true -p:PublishTrimmed=true -c Release
+```
+
+linux-x64 Self Contained
+```
+dotnet publish -r linux-x64 -o .\out -p:PublishSingleFile=true -p:PublishTrimmed=true -c Release
+```
+
+osx-x64 Self Contained
+win-x64
+```
+dotnet publish -r osx-x64 -o .\out -p:PublishSingleFile=true -p:PublishTrimmed=true -c Release
 ```
